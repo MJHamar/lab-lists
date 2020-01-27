@@ -27,10 +27,10 @@ numbers'' = [4,8,15,16,23]
 
 --------------------------------------------------------------------------------
 
-isPalindrome :: [Char] -> Bool 
-isPalindrome = undefined
+isPalindrome :: [Char] -> Bool
+isPalindrome a = a == reverse a
 
-validModuleCode :: [Char] -> Bool 
+validModuleCode :: [Char] -> Bool
 validModuleCode = undefined
 
 --------------------------------------------------------------------------------
