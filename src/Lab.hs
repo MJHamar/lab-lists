@@ -31,6 +31,10 @@ isPalindrome :: [Char] -> Bool
 isPalindrome a = a == reverse a
 
 validModuleCode :: [Char] -> Bool
-validModuleCode = undefined
+validModuleCode x = and ((==) (head x) 'c') ((==) (headOfTail x) 's')
+
+headOfTail :: [a] -> a
+headOfTail (x:y) = x
+headOfTail (x:y:xs) = y
 
 --------------------------------------------------------------------------------
